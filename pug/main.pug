@@ -1,0 +1,61 @@
+mixin comment(name,content)
+    div.comment-wrapper.col-12.col-md-6.col-lg-4
+        div.comment
+            div.name= name
+            div.comment-content= content
+doctype html
+
+html(lang='zh-Hant')
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        link(rel="stylesheet" href="/css/main.css")
+        title Title
+
+
+    body
+        main
+            div.container
+                div.row.justify-content-center
+                    div.col-12.col-md-6.text-center
+                        img.main-img(src="/assets/keiko-first-live.png")
+                        div.main-title-wrapper
+                            span.left-top
+                            span.left-bottom
+                            span.right-top
+                            span.right-bottom
+                            div.main-title
+                                h1 KEIKO First Live K001 ～ I’m home ～
+                                h2 〜台湾のみんなからのメッセージ〜
+                div.row
+                    +comment('ディシー','Keikoさん！ソロデビューおめでとう！香港ファンより♡')
+                    +comment('Cynthia Ng','Hi Keiko San, it’s so great to see you come back to us with a new style! Can’t wait to go to your concerts! Love you!')
+                    +comment('アクマ','ソロデビューおめでとうございます！ずっと素敵なままでいてね！')
+                    +comment('寒羽冰','恭喜Keikoさん獨立出道！也預祝9/6的演唱會順利！')
+                    +comment('MengChieh','初ソロライブおめでとう！公演のご成功をお祈り申し上げます。')
+                    +comment('Ying','你的歌聲感動我的心靈，今後會一直支持你')
+                    +comment('あめちゃん','KEIKOさん、おめでとうございます‼︎ ライブ楽しみにしています(*´꒳`*)')
+                    +comment('Teenia','恭喜Keiko舉辦第一場solo live！能繼續聽到妳的歌聲，就覺得非常滿足了！祝演出大成功！')
+                    +comment('hotarubi','ソロデビューおめでとうございます。新曲素晴らしい！逢いたいよ！')
+                    +comment('若叶','感谢您为我们带来的音乐，希望您以后的音乐之路越来越好！！')
+                    +comment('黃道宏','Keikoさん大好き！いつでも応援してあげます！')
+                    +comment('紅葉','能夠再聽見keikoさん的聲音，真的很幸福!會一直支持跟祝福你~')
+                    +comment('Carol','Love from Taiwan :)')
+                    +comment('無名氏','いつかまた台湾に来て、ライブを行うように! ')
+                    +comment('雨音あずさ','台湾の皆と生配信でワイワイして、また会える日を楽しみにしています。')
+                    +comment('Syu','初ソロライブおめでとう！台湾で友達と一緒に配信で応援します！💙')
+                    +comment('実','またKEIKOに会えるとわかった途端、嬉しくて風邪が治りそうになった(笑)。')
+                    +comment('吴嘉莹','祝solo一切顺利，请继续享受音乐的旅程！希望能听到您更多的作品！')
+                    +comment('羽','非常期待妳的第一場個人演唱會，我會一直支持妳跟妳的音樂')
+                    +comment('文月','一直都被你充滿魅力的嗓音吸引！能夠繼續聽到你唱歌覺得幸福！')
+                    +comment('AxelCheng','KEIKOさん，感謝你帶領我再來一場愉快的音樂探索！')
+                    +comment('Evan','網路直播讓台灣的Fans們也能一同參與音樂旅程真的太好了！祝演出順利！')
+                    +comment('珺','お気に入りの音楽を持ってきてくれてありがとう。')
+                    +comment('eric','KEIKO go go go')
+                    +comment('Amnis0','ソロライブおめでとう！いつも素晴らしい音楽を作ってありがとう！')
+                    +comment('H.W.','I will keep support you as always!')
+                    +comment('翠晞琳 Heilam','おめでとうございます🎉香港からいつも応援しています(≧▽≦) 加油！')
+                    +comment('WeiTing','KEIKOさんソロデビューおめでとう！これからも応援します！')
+                    +comment('火燈','お帰り(✿ﾟ▽ﾟ)ノ我在遙遠的小島國上為妳加油！ﾌﾚｰ(／・ω・)／ﾌﾚｰ')

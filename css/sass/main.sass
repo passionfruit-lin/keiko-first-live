@@ -1,0 +1,85 @@
+@mixin comment_style($color1,$color2,$text_color)
+    .name
+        background-color: $color1
+        box-shadow: 0 3px 0 $color2
+    .comment-content
+        color: $text_color
+        border-color: $color2
+        box-shadow: 0 5px 0 $color2
+@mixin title-decoration($x,$y)
+    position: absolute
+    background-image: url(/assets/decoration.svg)
+    background-repeat: no-repeat
+    height: 100px
+    width: 100px
+    #{$x}: -8px
+    #{$y}: -8px
+main
+    background-image: url(/assets/bg.svg)
+    background-size: 160px
+.main-title-wrapper
+    position: relative
+    z-index: 10
+    margin-bottom: 80px
+    .left-top
+        @include title-decoration(left,top)
+    .left-bottom
+        transform: rotate(270deg)
+        @include title-decoration(left,bottom)
+    .right-top
+        transform: rotate(90deg)
+        @include title-decoration(right,top)
+    .right-bottom
+        transform: rotate(180deg)
+        @include title-decoration(right,bottom)
+.main-title
+    background-color: #FFF8FD
+    box-shadow: 0 5px 0 #FFC6E0
+    text-align: center
+    padding: 40px 40px 36px
+    z-index: 10
+    h1
+        color: #720054
+        font-size: 24px
+        font-weight: 300
+    h2
+        color: #814261
+        font-size: 14px
+        font-weight: 300
+.main-img
+    margin-top: -40px
+    margin-bottom: -180px
+    max-width: 400px
+    width: 100%
+    filter: drop-shadow(0 3px 3px #FFC6E0)
+.comment-wrapper
+    margin-bottom: 54px
+    transition: transform 0.2s
+    .comment
+        position: relative
+        background-color: white
+    .name
+        color: white
+        position: absolute
+        left: 8px
+        top: -18px
+        padding: 6px 15px
+        background-color: #fff
+        border-radius: 18px
+    .comment-content
+        border: 1px solid
+        border-radius: 6px
+        padding: 30px 15px 20px
+        font-weight: 300
+    &:nth-child(4n+1)
+        @include comment_style(#D9219A,#9F2575,#E80677)
+    &:nth-child(4n+2)
+        @include comment_style(#4170C7,#2F57B2,#404E80)
+    &:nth-child(4n+3)
+        @include comment_style(#6FC741,#50B51B,#396047)
+    &:nth-child(4n+4)
+        @include comment_style(#F4AD4D,#F0784B,#AC441E)
+    &:hover
+        transform: translate(0,-10px)
+    @media (min-width:992px)
+        margin-bottom: 74px
