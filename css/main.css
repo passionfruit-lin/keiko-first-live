@@ -48,6 +48,16 @@ main {
   bottom: -8px;
 }
 
+#header {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translate(0, -100px);
+}
+#header.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .main-title {
   background-color: #FFF8FD;
   box-shadow: 0 5px 0 #FFC6E0;
@@ -75,8 +85,10 @@ main {
 }
 
 .comment-wrapper {
+  opacity: 0;
   margin-bottom: 54px;
-  transition: transform 0.2s;
+  transition: all 0.3s ease-out;
+  transition-delay: 0.15s;
 }
 .comment-wrapper .comment {
   position: relative;
@@ -133,13 +145,34 @@ main {
   border-color: #F0784B;
   box-shadow: 0 5px 0 #F0784B;
 }
-.comment-wrapper:hover {
+.comment-wrapper.visible:hover {
   transform: translate(0, -10px);
+}
+.comment-wrapper:nth-child(2n+1) {
+  transform: translate(30px, 0);
+}
+.comment-wrapper:nth-child(2n+2) {
+  transform: translate(-30px, 0);
+}
+.comment-wrapper.visible {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 @media (min-width: 992px) {
   .comment-wrapper {
     margin-bottom: 74px;
   }
+}
+
+.footer-decoration {
+  max-width: 35%;
+}
+.footer-decoration img {
+  max-width: 100%;
+}
+
+.logo {
+  max-height: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

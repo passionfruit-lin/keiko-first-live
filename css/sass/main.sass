@@ -32,6 +32,13 @@ main
     .right-bottom
         transform: rotate(180deg)
         @include title-decoration(right,bottom)
+#header
+    opacity: 0
+    transition: all 0.5s
+    transform: translate(0,-100px)
+    &.active
+        opacity: 1
+        transform: translate(0,0)
 .main-title
     background-color: #FFF8FD
     box-shadow: 0 5px 0 #FFC6E0
@@ -53,8 +60,10 @@ main
     width: 100%
     filter: drop-shadow(0 3px 3px #FFC6E0)
 .comment-wrapper
+    opacity: 0
     margin-bottom: 54px
-    transition: transform 0.2s
+    transition: all 0.3s ease-out
+    transition-delay: 0.15s
     .comment
         position: relative
         background-color: white
@@ -79,7 +88,20 @@ main
         @include comment_style(#6FC741,#50B51B,#396047)
     &:nth-child(4n+4)
         @include comment_style(#F4AD4D,#F0784B,#AC441E)
-    &:hover
+    &.visible:hover
         transform: translate(0,-10px)
+    &:nth-child(2n+1)
+        transform: translate(30px,0)
+    &:nth-child(2n+2)
+        transform: translate(-30px,0)
+    &.visible
+        transform: translate(0,0)
+        opacity: 1
     @media (min-width:992px)
         margin-bottom: 74px
+.footer-decoration
+    max-width: 35%
+    img
+        max-width: 100%
+.logo
+    max-height: 50px
