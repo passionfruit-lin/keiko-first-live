@@ -1,5 +1,5 @@
 main {
-  background-image: url(/assets/bg.svg);
+  background-image: url(https://passionfruit-lin.github.io/keiko-first-live/assets/bg.svg);
   background-size: 160px;
 }
 
@@ -10,7 +10,7 @@ main {
 }
 .main-title-wrapper .left-top {
   position: absolute;
-  background-image: url(/assets/decoration.svg);
+  background-image: url(https://passionfruit-lin.github.io/keiko-first-live/assets/decoration.svg);
   background-repeat: no-repeat;
   height: 100px;
   width: 100px;
@@ -20,7 +20,7 @@ main {
 .main-title-wrapper .left-bottom {
   transform: rotate(270deg);
   position: absolute;
-  background-image: url(/assets/decoration.svg);
+  background-image: url(https://passionfruit-lin.github.io/keiko-first-live/assets/decoration.svg);
   background-repeat: no-repeat;
   height: 100px;
   width: 100px;
@@ -30,7 +30,7 @@ main {
 .main-title-wrapper .right-top {
   transform: rotate(90deg);
   position: absolute;
-  background-image: url(/assets/decoration.svg);
+  background-image: url(https://passionfruit-lin.github.io/keiko-first-live/assets/decoration.svg);
   background-repeat: no-repeat;
   height: 100px;
   width: 100px;
@@ -40,7 +40,7 @@ main {
 .main-title-wrapper .right-bottom {
   transform: rotate(180deg);
   position: absolute;
-  background-image: url(/assets/decoration.svg);
+  background-image: url(https://passionfruit-lin.github.io/keiko-first-live/assets/decoration.svg);
   background-repeat: no-repeat;
   height: 100px;
   width: 100px;
